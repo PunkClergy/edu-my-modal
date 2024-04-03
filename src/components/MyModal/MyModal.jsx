@@ -24,8 +24,8 @@ import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
 import moment from "moment";
 import modalStyle from "./index.less";
 import scrollIntoView from "dom-scroll-into-view"; // eslint-disable-line
-import { regexp } from "../common/common";
-// import AddressInput from "../common/AddressInput";
+import { regexp } from "../utils/common";
+import AddressInput from "../common/AddressInput";
 // import NameInput from "../common/NameInput";
 // import PicturesWall from "../common/PicturesWall";
 
@@ -290,19 +290,19 @@ class MyModal extends Component {
         //     </Col>
         //   );
         //   break;
-        // case "addressInput":
-        //   // 地址复选框
-        //   children.push(
-        //     <Col span={12} key={value.key}>
-        //       <FormItem label={value.labelName}>
-        //         {form.getFieldDecorator(value.keyName, {
-        //           rules: this.formatValueToRulesArr(value),
-        //           initialValue: value.hisDefaultValue || [],
-        //         })(<AddressInput addressStyle={{ width: "100%" }} disabled={!!value.disabled} dispatch={dispatch} />)}
-        //       </FormItem>
-        //     </Col>
-        //   );
-        //   break;
+        case "addressInput":
+          // 地址复选框
+          children.push(
+            <Col span={12} key={value.key}>
+              <FormItem label={value.labelName}>
+                {form.getFieldDecorator(value.keyName, {
+                  rules: this.formatValueToRulesArr(value),
+                  initialValue: value.hisDefaultValue || [],
+                })(<AddressInput addressStyle={{ width: "100%" }} disabled={!!value.disabled} dispatch={dispatch} />)}
+              </FormItem>
+            </Col>
+          );
+          break;
         case "gender":
           // 性别
           children.push(
