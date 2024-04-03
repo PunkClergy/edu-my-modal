@@ -3,7 +3,7 @@ import { Table, Col, Select, Row, Input, Button, DatePicker, Card, Radio } from 
 import { Form } from "@ant-design/compatible";
 import { injectIntl } from "umi";
 import SelectInput from "../common/SelectInput";
-import styles from "../../public/css/TableListTwo.less";
+import styles from "../public/css/TableListTwo.less";
 
 const FormItem = Form.Item;
 const { Option } = Select;
@@ -165,7 +165,7 @@ class MyTable extends PureComponent {
                   <Radio.Group
                     key={singleMenu.key}
                     size={singleMenu.size || "default"}
-                    // onChange={this.handleSizeChange}
+                  // onChange={this.handleSizeChange}
                   >
                     <Radio.Button value="" key="allFirst">
                       全部
