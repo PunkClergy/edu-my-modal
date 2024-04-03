@@ -1,6 +1,6 @@
 {
-  "name": "edu-my-modal",
-  "version": "1.0.0",
+  "name": "edu-my-modal-test",
+  "version": "1.0.2",
   "private": false,
   "description": "A beautiful dragable react time selector with clock and number & am am",
   "main": "./src/index.jsx",
