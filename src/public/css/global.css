@@ -1,0 +1,7 @@
+
+.dropdownMenu .ant-select-dropdown-menu {
+  max-height: 100px !important;
+}
+/*.drawer_self .ant-drawer-wrapper-body {*/
+/*overflow: visible !important;*/
+/*}*/
