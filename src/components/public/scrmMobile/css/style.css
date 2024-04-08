@@ -1,0 +1,89 @@
+html,body{ margin: 0; padding: 0; height: 100%; font-size: 14px; font-family: Arial;}
+input {
+  outline:none;
+  background:transparent;
+  border:none;
+  outline:medium;
+}
+*:focus {
+  outline: none;
+  background-color: transparent;
+}
+::placeholder{ color: #939598;}
+::selection{background:transparent; }
+::-moz-selection{background:transparent; }
+.showToast{ position: fixed; top: 200px; left: 0; text-align: center; width: 100%; display: none;}
+.showToast span{ display: inline-block; background: rgba(0,0,0,0.7); color: #ffffff; font-size: 12px; padding: 8px 15px; border-radius: 8px; line-height: 20px; margin: 0 10px;}
+
+.cont{ max-width: 400px; min-height: 460px; width: 96%; margin: auto; background: #ffffff; border-radius: 20px; display: flex; flex-direction: column; align-items: center;}
+.logo .payforimg{ width: 100px; display: block; margin: 30px auto;}
+.loginInp{ margin-top: 20px; width: 100%;}
+.loginInp .inputBox{ width: 85%; margin:20px auto; height: 40px; border-bottom: 1px solid #e3e3e3; display: flex; flex-direction:row; align-items: center;}
+.userIcon{ width: 25px; height: 25px;}
+input{ width: 100%; font-size: 16px; margin-left: 5px;}
+.loginBtn{ width: 80%; height: 40px; line-height: 40px; border-radius: 4px; text-align: center; background: #1d68f1; margin: auto; color: #ffffff;}
+.loginInp .inputBox .smsVerify{ width: 140px; border: 1px solid #1d68f1; color: #1d68f1; border-radius: 50px; text-align: center;margin-left: 5px; height: 30px; line-height: 30px;}
+.loginInp .inputBox .smsVerifyGray{ width: 150px; border: 1px solid #666666; color: #666666; border-radius: 50px; text-align: center;height: 30px; line-height: 30px; margin-left: 5px;}
+
+.headerImg{ height: 100px; width: 100px; box-shadow: 0 1px 5px #dadada; background: #FFFFFF; padding: 3px; overflow: hidden; border-radius: 50%; margin-top: 20px;}
+.headerImg img{ display: block; width: 100%; height: 100%; border-radius: 50%;}
+
+
+
+.pop{ height: 100%; width: 100%; background: rgba(0,0,0,0.1);position: fixed; top:0; left: 0; display: flex; justify-content: center;  align-items:center}
+.pop-loading{ width: 100px; height: 100px; background: rgba(255,255,255,0.8); display: flex; justify-content: center;  align-items:center; border-radius: 8px;}
+.pop-loading img{ width: 50px; height: 50px;}
+
+
+.header{ height: 50px; line-height: 50px; box-shadow: 0 2px 5px #dedede; display: flex;flex-direction: row; background: #ffffff;}
+.header-left{ width: 50%; text-indent: 10px;}
+.header-right{ width: 50%; text-align: right; margin-right: 10px; color: #f76c51;}
+
+.listCont{ margin: 20px 0;}
+.paylist{ display: flex; flex-direction: row; height: 75px; box-shadow: 0 2px 4px #DDDDDD;background: #ffffff; margin: 0 auto; width: 94%; position: relative; z-index: 9;}
+.paylist-left{ width: 100%; padding: 5px;font-size: 12px; color: #888888; line-height: 22px;}
+.paylist-right{ width: 80px; background: #f76c51; line-height: 75px; text-align: center; color: #ffffff; font-size: 16px;}
+.paylist-left-text1{display: flex;}
+.sum-left{ width: 50%;}
+.sum-right{ width: 50%; text-align: right;}
+.paylist-left .date span{ color: #000000;}
+.paylist-left .sum{ font-size: 20px; color: #f76c51;}
+.paylist-left .sumlogo{ color: #f76c51;}
+.paylist-left .order span{ color: #000000;}
+
+.paylist-detail{ width: 85%; margin:0 auto 20px auto; min-height: 100px; background: #ffffff;  box-shadow: 0 2px 2px #DDDDDD; color: #666; padding: 10px 0;}
+.width50{ width: 50%;}
+.paylist-detail-info{ display: flex; flex-direction: row; flex-wrap: wrap; padding: 5px 0; width: 94%; margin: auto;}
+.paylist-detail-info .width50{ line-height: 30px; height: 30px}
+.paylist-detail-title{ font-size: 16px; text-indent: 10px; height: 35px; line-height: 35px; border-bottom: 1px solid #DDDDDD;}
+.paylist-detail-title2{width: 94%; margin:10px auto 0 auto;font-weight: 600;}
+.colorSum{ color: #f76c51; font-size: 14px;}
+.paylist-detail-total{width: 94%; margin:10px auto 0 auto; text-align: right; color: #000000;}
+.paylist-detail-total span{ font-size: 18px;}
+
+
+.payWay{ height: 100%; width: 100%; background: rgba(0,0,0,0.5); position: fixed; top:0; left: 0; z-index: 99; }
+.payWay-cont{ width: 100%; height: 200px; background: #ffffff; position: absolute; bottom: 0; left:0;}
+.payWay-cont-title{ height: 35px; color: #666666; text-align: center; border-bottom: 1px solid #eeeeee; line-height: 35px; position: relative;}
+.payWay-cont-title .close{ color: #1d68f1; position: absolute; right: 20px;}
+.payWay-cont-box{ width: 80%; margin: auto;  color: #ffffff; text-align: center; line-height: 40px;}
+.weChatPay{ height: 40px; background: #2FC25B; border-radius: 5px; margin: 20px 0;}
+.aliPay{height: 40px; background: #1d68f1; border-radius: 5px; margin: 20px 0;}
+
+.noOrder{ text-align: center; margin-top: 30px;}
+
+.result-cont{ height: 100%; display: flex; flex-direction: column; align-items: center; }
+.result-state{ text-align: center; margin-top: 100px;}
+.result-state img{ width: 100px;}
+.result-state .text{ color: #666a73; margin-top: 10px; font-size: 16px;}
+
+.result-list{ width: 80%; text-align: center; border: 1px solid #d3d3d3; border-radius: 6px; background: #f8f8f8; margin-top: 30px; padding: 10px; color: #666; line-height: 30px;}
+
+
+
+.result-button{ width: 80%; height: 40px; line-height: 40px; border-radius: 4px; text-align: center; background: #f76c51; margin:60px auto; color: #ffffff;}
+
+
+.success{ text-align: center; height: 100%; margin-top: 80px;}
+
+.success-text{ font-size: 24px; color: #666; margin-top: 20px;}

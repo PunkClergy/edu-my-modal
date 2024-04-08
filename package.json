@@ -1,6 +1,6 @@
 {
-  "name": "edu-my-modal-test",
-  "version": "1.0.2",
+  "name": "edu-my-modal-qa",
+  "version": "2.0.0",
   "private": false,
   "description": "A beautiful dragable react time selector with clock and number & am am",
   "main": "./src/index.jsx",
@@ -41,8 +41,11 @@
   },
   "dependencies": {
     "antd": "^5.16.2",
+    "@ant-design/compatible": "^5.1.2",
     "moment": "^2.29.1",
     "@ant-design/icons": "^4.3.0",
+    "umi": "^3.3.3",
+    "umi-request": "^1.3.5",
     "dom-scroll-into-view": "^2.0.1"
   }
 }
