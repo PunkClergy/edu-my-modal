@@ -1,0 +1,49 @@
+.antProbablyStudentModal {
+  :global {
+    ::-webkit-scrollbar {
+      width: 4px;
+      background-color: white;
+      border-radius: 4px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.45);
+    }
+    .ant-modal-body {
+      max-height: 454px;
+      overflow-y: scroll;
+      min-height: 200px;
+      padding: 10px 45px 20px 45px;
+      .ant-form-item [class^='ant-col-'] > .ant-form-item:only-child {
+        margin-bottom: 0;
+      }
+      .ant-form-item {
+        margin: 0;
+        .ant-form-item-label {
+          text-align: left;
+        }
+        .ant-form-item-control-wrapper {
+          flex: 1;
+        }
+      }
+    }
+    .myUpload > .ant-upload {
+      width: 128px;
+      height: 128px;
+    }
+    .mySpin {
+      position: absolute;
+      width: 80%;
+      z-index: 1111;
+      max-height: 300px;
+      height: 90%;
+      .ant-spin-dot-spin.ant-spin-dot {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+      }
+    }
+  }
+}
