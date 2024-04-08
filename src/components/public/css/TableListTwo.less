@@ -1,0 +1,66 @@
+// @import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+.tableList {
+  .tableListOperator {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 10px !important;
+      margin-right: 0;
+      .ant-form-item-label {
+        padding-right: 8px;
+      }
+    }
+    .myForm {
+      .ant-row {
+        // flex-wrap: wrap;
+      }
+      .ant-form-item {
+        display: flex;
+        margin-bottom: 10px;
+        .ant-calendar-picker-input {
+          overflow: hidden;
+        }
+        .ant-radio-group {
+          line-height: 39px;
+          .ant-radio-button-wrapper {
+            border: none;
+            border-left: none;
+            padding: 0 30px;
+          }
+          .ant-radio-button-wrapper() !important;
+          .ant-radio-button-wrapper::before {
+            background-color: transparent;
+          }
+          .ant-radio-button-wrapper-checked {
+            box-shadow: none;
+          }
+          .ant-radio-button-wrapper-checked::before {
+            opacity: 0;
+          }
+        }
+        .ant-form-item-control-wrapper {
+          flex: 1;
+          .ant-form-item-control {
+            line-height: unset;
+          }
+          .ant-calendar-picker {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .submitButtons {
+    white-space: nowrap;
+    margin-bottom: 24px;
+  }
+}
